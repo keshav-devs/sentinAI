@@ -78,5 +78,3 @@ Deploying to **HuggingFace Spaces** is handled via the included `Dockerfile`.
 ## 📜 License
 This project is licensed under the **MIT License**.
 ```
-
----
