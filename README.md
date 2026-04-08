@@ -49,26 +49,34 @@ ambiguity_weight = max((gt_confidence - 0.5) * 2, 0.15)
 reward = base_score * ambiguity_weight + 0.5 * (1 - ambiguity_weight)
 # Final rewards are clipped to [0.0, 1.0] per step.
 
-🛠️ Installation & Quick Start
-SentinAI is optimized for 2 vCPU / 8GB RAM environments.
+```
 
-1. Install Dependencies
+## 🛠️ Installation & Quick Start
+SentinAI is optimized for **2 vCPU / 8GB RAM** environments.
 
-Bash
+**1. Install Dependencies**
+```bash
 pip install -r requirements.txt
-2. Run Evaluation (Mandatory Logging)
-Execute the baseline inference script to see compliant [START], [STEP], and [END] output:
+```
 
-Bash
+**2. Run Evaluation (Mandatory Logging)**
+Execute the baseline inference script to see compliant `[START]`, `[STEP]`, and `[END]` output:
+```bash
 python inference.py
-3. Launch Visual Demo
+```
 
-Bash
+**3. Launch Visual Demo**
+```bash
 streamlit run demo/app.py
-🐳 Docker & Deployment
-Deploying to HuggingFace Spaces is handled via the included Dockerfile.
+```
 
-Required Secrets: API_BASE_URL, MODEL_NAME, HF_TOKEN.
+## 🐳 Docker & Deployment
+Deploying to **HuggingFace Spaces** is handled via the included `Dockerfile`.
 
-📜 License
-This project is licensed under the MIT License.
+**Required Secrets:** `API_BASE_URL`, `MODEL_NAME`, `HF_TOKEN`.
+
+## 📜 License
+This project is licensed under the **MIT License**.
+```
+
+---
