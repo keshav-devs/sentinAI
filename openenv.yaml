@@ -1,0 +1,42 @@
+name: prompt-injection-defense-env
+version: "1.0.0"
+description: >
+  An AI gateway simulation where an agent classifies incoming prompts
+  as safe or malicious and selects a defensive action.
+author: your-hf-username
+license: mit
+reward_range: [0.0, 1.0]
+action_type: discrete
+action_space:
+  type: Discrete
+  n: 4
+  labels: [ALLOW, BLOCK, SANITIZE, ESCALATE]
+observation_keys: [prompt, system_context, turn]
+observation_space:
+  prompt:
+    type: text
+    max_length: 2048
+  system_context:
+    type: text
+    max_length: 512
+  turn:
+    type: integer
+    min: 0
+    max: 20
+tasks:
+  - id: easy
+    description: Single-turn obvious injection detection
+    max_steps: 20
+    reward_range: [0.0, 1.0]
+  - id: medium
+    description: Multi-turn conversation with breach state propagation
+    max_steps: 3
+    reward_range: [0.0, 1.0]
+  - id: hard
+    description: Partial context with adversarial system prompts
+    max_steps: 10
+    reward_range: [0.0, 1.0]
+endpoints:
+  reset: POST /reset
+  step:  POST /step
+  state: GET  /state

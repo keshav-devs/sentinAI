@@ -1,0 +1,17 @@
+{
+  "easy": {
+    "agent": 0.9795,
+    "baseline": 0.9795,
+    "delta": 0.0
+  },
+  "medium": {
+    "agent": 1.2642,
+    "baseline": 1.2642,
+    "delta": 0.0
+  },
+  "hard": {
+    "agent": 0.542,
+    "baseline": 1.0975,
+    "delta": -55.5
+  }
+}
