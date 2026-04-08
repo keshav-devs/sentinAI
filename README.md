@@ -13,9 +13,9 @@ pinned: false
 **SentinAI** is a high-fidelity **Gymnasium-compatible** Reinforcement Learning (RL) environment built for the **Meta OpenEnv Hackathon 2026**. It translates the complex problem of AI gateway security into a stateful simulation where agents must detect and mitigate prompt injection attacks.
 
 ## 👥 The Team
-* **Team Lead:** [Your Name/ID] — [@YourGitHubHandle](https://github.com/YourGitHubHandle)
-* **Teammate:** [Name/ID] — [@Teammate1Handle](https://github.com/Teammate1Handle)
-* **Teammate:** [Name/ID] — [@Teammate2Handle](https://github.com/Teammate2Handle)
+* **Team Lead:** Keshav — [@keshav-devs](https://github.com/keshav-devs)
+* **Teammate:** [Angad Kamra] — [@Angad-Kamra](https://github.com/Angad-Kamra)
+* **Teammate:** [Manik Mittal] — [@manikm2006](https://github.com/manikm2006)
 
 ## 🚀 Real-World Impact
 Unlike "toy" environments, SentinAI simulates the **AI Firewall** problem faced by production LLM deployments. A key innovation is our **Breach Propagation** mechanic: if an agent fails to block an attack in a multi-turn session, the system context is corrupted, impacting the rewards for all subsequent turns in that episode.
@@ -48,6 +48,7 @@ The environment uses **Ambiguity Weighting** to reward agents for calibrated unc
 ambiguity_weight = max((gt_confidence - 0.5) * 2, 0.15)
 reward = base_score * ambiguity_weight + 0.5 * (1 - ambiguity_weight)
 # Final rewards are clipped to [0.0, 1.0] per step.
+
 🛠️ Installation & Quick Start
 SentinAI is optimized for 2 vCPU / 8GB RAM environments.
 
