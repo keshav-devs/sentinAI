@@ -14,8 +14,8 @@ pinned: false
 
 ## 👥 The Team
 * **Team Lead:** Keshav — [@keshav-devs](https://github.com/keshav-devs)
-* **Teammate:** [Angad Kamra] — [@Angad-Kamra](https://github.com/Angad-Kamra)
-* **Teammate:** [Manik Mittal] — [@manikm2006](https://github.com/manikm2006)
+* **Teammate:** Angad Kamra — [@Angad-Kamra](https://github.com/Angad-Kamra)
+* **Teammate:** Manik Mittal — [@manikm2006](https://github.com/manikm2006)
 
 ## 🚀 Real-World Impact
 Unlike "toy" environments, SentinAI simulates the **AI Firewall** problem faced by production LLM deployments. A key innovation is our **Breach Propagation** mechanic: if an agent fails to block an attack in a multi-turn session, the system context is corrupted, impacting the rewards for all subsequent turns in that episode.
